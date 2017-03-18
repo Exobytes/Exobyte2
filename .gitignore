@@ -183,3 +183,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/pycharm,python,windows,linux
+.idea/vcs.xml
