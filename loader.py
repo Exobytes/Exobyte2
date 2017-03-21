@@ -1,7 +1,8 @@
 """
 This will load all the functions of Exobyte
 """
-from libraries.temp import sys
+from libraries.temp import sys as sysC
+import network.main as network
 
 
 def core_menu():
@@ -11,26 +12,31 @@ def core_menu():
     print("[3] Settings")
     print("[4] Quit")
 
-    # commands = input(">>>: ")
-    commandscol = '>>>: '
-    commands = input(commandscol)
-
-    if commands == "1":
-        print("You typed 1")
+    while True:
+        commandscol = ">>>: "
+        commands = input(commandscol)
+        if commands == "1":
+            print("You typed 1")
+            network.network_main()
+            return False
+        elif commands == "2":
+            print("You typed 2")
+            # load class
+            return False
         # goes to map/class directory
-    elif commands == "2":
-        print("You typed 2")
-    # goes to map/class directory
-    elif commands == "3":
-        print("You typed 3")
-    # goes to map/class directory
-    elif commands == "4":
-        while True:
+        elif commands == "3":
+            print("You typed 3")
+            # load class
+            return False
+        # goes to map/class directory
+        elif commands == "4":
             print("Are you sure? Yes/no")
             commands = input(">>>: ")
-            if commands == "Yes" or "yes":
-                sys.exit("Quit")
-            elif commands == "no":
-                continue
-            else:
-                print("Not valid!")
+            if commands == "No" or "no":
+                core_menu()
+            elif commands == "Yes" or "yes":
+                sysC.exit(Quit)
+        else:
+            print("Not valid!")
+
+core_menu()
