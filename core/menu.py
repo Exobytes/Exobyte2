@@ -1,7 +1,6 @@
 import sys
-import core.classes
 
-
+"""
 def core_menu():
 
     print("[1] Networking")
@@ -32,3 +31,4 @@ def core_menu():
                 continue
             else:
                 print("Not valid!")
+"""

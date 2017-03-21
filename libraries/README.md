@@ -1,1 +1,0 @@
-This directory will be used for the libraries used in Exobyte. So that the end user wouldn't need to install ton's of packages.
